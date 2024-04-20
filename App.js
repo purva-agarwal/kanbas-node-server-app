@@ -10,6 +10,7 @@ import QuizRoutes from './Kanbas/quizzes/routes.js';
 import UserRoutes from './Kanbas/users/routes.js'
 import session from "express-session";
 import "dotenv/config";
+import QuestionRoutes from './Kanbas/questions/routes.js';
 //const CONNECTION_STRING = 'mongodb://127.0.0.1:27017/kanbas'
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
 
@@ -41,5 +42,6 @@ CourseRoutes(app)
 ModuleRoutes(app)
 AssignmentsRoutes(app)
 QuizRoutes(app)
+QuestionRoutes(app)
 UserRoutes(app);
 app.listen(process.env.PORT || 4000);
