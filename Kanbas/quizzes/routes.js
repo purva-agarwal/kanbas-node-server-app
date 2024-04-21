@@ -56,6 +56,8 @@ function QuizRoutes(app) {
 
     try {
       const new_quiz = await dao.createQuiz(newQuiz);
+      console.log(new_quiz);
+
       res.send(new_quiz);
     } catch (error) {
       res.status(500).send("Internal Server Error");
