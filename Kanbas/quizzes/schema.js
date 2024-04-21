@@ -40,8 +40,7 @@ const quizzesSchema = new mongoose.Schema(
       isTimeLimited: Boolean,
       questions: [
         {
-          type: mongoose.Schema.Types.ObjectId,
-          ref: "questions" // Reference to the "Question" collection
+         type: String,
         }
       ],
   },

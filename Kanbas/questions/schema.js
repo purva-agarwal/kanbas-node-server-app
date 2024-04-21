@@ -8,8 +8,8 @@ const questionSchema = new mongoose.Schema(
       required: true,
     },
     quizId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "quizzes" // Reference to the "Question" collection
+      type: String,
+      required: true,
     },
     questionType: {
       type: String,
