@@ -1,5 +1,4 @@
 import model from "./model.js";
-import {findQuizById, updateQuiz} from "../quizzes/dao.js";
 export const findQuestionFromQuiz = (quizId) => model.find({quizId})
 export const findQuestionById = (questionId) => model.findById( questionId );
 export const createQuestion = (question) => {
