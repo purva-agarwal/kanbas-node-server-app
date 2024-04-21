@@ -41,7 +41,7 @@ const quizzesSchema = new mongoose.Schema(
       questions: [
         {
           type: mongoose.Schema.Types.ObjectId,
-          ref: "Question" // Reference to the "Question" collection
+          ref: "questions" // Reference to the "Question" collection
         }
       ],
   },
